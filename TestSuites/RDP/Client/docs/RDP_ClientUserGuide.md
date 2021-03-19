@@ -208,7 +208,7 @@
 
 [Figure 17. Protocol Test Manager: Context menu commands for Test Case execution](#figure-17-protocol-test-manager-context-menu-commands-for-test-case-execution)
 
-[Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping-expanded-errormessage-result)
+[Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping-|-expanded-errormessage-result)
 
 [Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category-standardout-node)
 
