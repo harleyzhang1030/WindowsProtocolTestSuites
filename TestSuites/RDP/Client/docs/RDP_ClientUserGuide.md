@@ -1,174 +1,176 @@
+# RDP Client Test Suite User Guide
+
 **Table of Contents**
 
 [Introduction](#introduction)
 
 [Getting Started with RDP Client Test Suite](#getting-started-with-rdp-client-test-suite)
 
-[License Information](#license-information)
+-    [License Information](#license-information)
 
-[Further Assistance](#further-assistance)
+-    [Further Assistance](#further-assistance)
 
-[RDP Client Test Suite Setup Overview](#rdp-client-test-suite-setup-overview)
+-    [RDP Client Test Suite Setup Overview](#rdp-client-test-suite-setup-overview)
 
-[Choosing the RDP Test Case Execution Method](#choosing-the-rdp-test-case-execution-method)
+      -    [Choosing the RDP Test Case Execution Method](#choosing-the-rdp-test-case-execution-method)
 
 [Test Environment Requirements](#test-environment-requirements)
 
-[Test Environment Computer Requirements](#test-environment-computer-requirements)
+-    [Test Environment Computer Requirements](#test-environment-computer-requirements)
 
-[Driver Computer](#driver-computer)
+      -    [Driver Computer](#driver-computer)
 
-[System Under Test (SUT)](#system-under-test-sut)
+      -    [System Under Test (SUT)](#system-under-test-sut)
 
-[Domain Controller](#domain-controller)
+      -    [Domain Controller](#domain-controller)
 
-[Software Installation](#software-installation)
+-    [Software Installation](#software-installation)
 
-[Required Prerequisite Software](#required-prerequisite-software)
+      -    [Required Prerequisite Software](#required-prerequisite-software)
 
-[RDP Client Test Suite Software Installation](#rdp-client-test-suite-software-installation)
+      -    [RDP Client Test Suite Software Installation](#rdp-client-test-suite-software-installation)
 
-[Other RDP Client Test Suite Acquisition Methods](#other-rdp-client-test-suite-acquisition-methods)
+            -    [Other RDP Client Test Suite Acquisition Methods](#other-rdp-client-test-suite-acquisition-methods)
 
-[Optional Software](#optional-software)
+      -    [Optional Software](#optional-software)
 
-[Network Configuration](#network-configuration)
+-    [Network Configuration](#network-configuration)
 
-[Network Infrastructure](#network-infrastructure)
+      -    [Network Infrastructure](#network-infrastructure)
 
-[Workgroup Environment](#workgroup-environment)
+      -    [Workgroup Environment](#workgroup-environment)
 
-[Domain Environment](#domain-environment)
+      -    [Domain Environment](#domain-environment)
 
-[Verifying Test Environment Connectivity](#verifying-test-environment-connectivity)
+-    [Verifying Test Environment Connectivity](#verifying-test-environment-connectivity)
 
 [Setting up Test Environment Computers](#setting-up-test-environment-computers)
 
-[Extracted Files and Folders](#extracted-files-and-folders)
+-    [Extracted Files and Folders](#extracted-files-and-folders)
 
-[Setting Up the Driver Computer](#setting-up-the-driver-computer)
+-    [Setting Up the Driver Computer](#setting-up-the-driver-computer)
 
-[Setting Up the Windows-Based SUT](#setting-up-the-windows-based-sut)
+-    [Setting Up the Windows-Based SUT](#setting-up-the-windows-based-sut)
 
-[Setting Up the Windows-Based Domain Controller](#setting-up-the-windows-based-domain-controller)
+-    [Setting Up the Windows-Based Domain Controller](#setting-up-the-windows-based-domain-controller)
 
-[Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders)
+-    [Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders)
 
-[Configuring Windows Test Environment Computers](#configuring-windows-test-environment-computers)
+-    [Configuring Windows Test Environment Computers](#configuring-windows-test-environment-computers)
 
-[Configuring the SUT](#configuring-the-sut)
+-    [Configuring the SUT](#configuring-the-sut)
 
-[Configuring the Driver Computer](#configuring-the-driver-computer)
+-    [Configuring the Driver Computer](#configuring-the-driver-computer)
 
-[Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers)
+-    [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers)
 
 [Configuring the Test Suite](#configuring-the-test-suite)
 
-[Required Configuration Settings](#required-configuration-settings)
+-    [Required Configuration Settings](#required-configuration-settings)
 
-[Common Required Property Settings](#common-required-property-settings)
+      -    [Common Required Property Settings](#common-required-property-settings)
 
-[Property Settings Required for RDP Protocol Extension Test Cases](#property-settings-required-for-rdp-protocol-extension-test-cases)
+      -    [Property Settings Required for RDP Protocol Extension Test Cases](#property-settings-required-for-rdp-protocol-extension-test-cases)
 
-[MS-RDPBCGR Required Property Settings](#ms-rdpbcgr-required-property-settings)
+            -    [MS-RDPBCGR Required Property Settings](#ms-rdpbcgr-required-property-settings)
 
-[MS-RDPRFX Required Property Settings](#ms-rdprfx-required-property-settings)
+            -    [MS-RDPRFX Required Property Settings](#ms-rdprfx-required-property-settings)
 
-[MS-RDPEGFX Required Property Settings](#ms-rdpegfx-required-property-settings)
+            -    [MS-RDPEGFX Required Property Settings](#ms-rdpegfx-required-property-settings)
 
-[MS-RDPEDISP Required Property Settings](#ms-rdpedisp-required-property-settings)
+            -    [MS-RDPEDISP Required Property Settings](#ms-rdpedisp-required-property-settings)
 
-[Optional Configuration Settings](#optional-configuration-settings)
+-    [Optional Configuration Settings](#optional-configuration-settings)
 
 [Running Test Cases](#running-test-cases)
 
-[Test Run Pre-Configuration](#test-run-pre-configuration)
+-    [Test Run Pre-Configuration](#test-run-pre-configuration)
 
-[Configuring Common Test Suite Mode Settings](#configuring-common-test-suite-mode-settings)
+      -    [Configuring Common Test Suite Mode Settings](#configuring-common-test-suite-mode-settings)
 
-[Controlling the RDP Client on a Windows SUT Computer](#controlling-the-rdp-client-on-a-windows-sut-computer)
+            -    [Controlling the RDP Client on a Windows SUT Computer](#controlling-the-rdp-client-on-a-windows-sut-computer)
 
-[Running Test Cases in the Test Suite Modes](#running-test-cases-in-the-test-suite-modes)
+            -    [Running Test Cases in the Test Suite Modes](#running-test-cases-in-the-test-suite-modes)
 
-[Configuring the Test Suite Mode for MS-RDPEI Events](#configuring-the-test-suite-mode-for-ms-rdpei-events)
+      -    [Configuring the Test Suite Mode for MS-RDPEI Events](#configuring-the-test-suite-mode-for-ms-rdpei-events)
 
-[Choosing a Test Suite Mode Setting for MS-RDPEI Test Cases](#choosing-a-test-suite-mode-setting-for-ms-rdpei-test-cases)
+            -    [Choosing a Test Suite Mode Setting for MS-RDPEI Test Cases](#choosing-a-test-suite-mode-setting-for-ms-rdpei-test-cases)
 
-[Running MS-RDPEI Test Cases in the Test Suite Modes](#running-ms-rdpei-test-cases-in-the-test-suite-modes)
+            -    [Running MS-RDPEI Test Cases in the Test Suite Modes](#running-ms-rdpei-test-cases-in-the-test-suite-modes)
 
-[Configuring the Test Suite Mode for MS-RDPEDISP Events](#configuring-the-test-suite-mode-for-ms-rdpedisp-events)
+      -    [Configuring the Test Suite Mode for MS-RDPEDISP Events](#configuring-the-test-suite-mode-for-ms-rdpedisp-events)
 
-[Choosing a Test Suite Mode Setting for MS-RDPEDISP Test Cases](#choosing-a-test-suite-mode-setting-for-ms-rdpedisp-test-cases)
+            -    [Choosing a Test Suite Mode Setting for MS-RDPEDISP Test Cases](#choosing-a-test-suite-mode-setting-for-ms-rdpedisp-test-cases)
 
-[Running MS-RDPEDISP Test Cases in the Test Suite Modes](#running-ms-rdpedisp-test-cases-in-the-test-suite-modes)
+            -    [Running MS-RDPEDISP Test Cases in the Test Suite Modes](#running-ms-rdpedisp-test-cases-in-the-test-suite-modes)
 
-[Running Verification Tests](#running-verification-tests)
+-    [Running Verification Tests](#running-verification-tests)
 
-[Running All Test Cases](#running-all-test-cases)
+-    [Running All Test Cases](#running-all-test-cases)
 
-[Running Specific Test Cases](#running-specific-test-cases)
+-    [Running Specific Test Cases](#running-specific-test-cases)
 
-[Example: Running Test Cases in Interactive Mode](#example-running-test-cases-in-interactive-mode)
+-    [Example: Running Test Cases in Interactive Mode](#example-running-test-cases-in-interactive-mode)
 
-[Example: Running RDPEI Test Cases in Interactive Mode](#example-running-rdpei-test-cases-in-interactive-mode)
+-    [Example: Running RDPEI Test Cases in Interactive Mode](#example-running-rdpei-test-cases-in-interactive-mode)
 
-[Viewing Test Results](#viewing-test-results)
+-    [Viewing Test Results](#viewing-test-results)
 
-[Running and Debugging Test Cases with Visual Studio](#running-and-debugging-test-cases-with-visual-studio)
+-    [Running and Debugging Test Cases with Visual Studio](#running-and-debugging-test-cases-with-visual-studio)
 
 [Using Protocol Test Manager](#using-protocol-test-manager)
 
-[Installing the Protocol Test Manager](#installing-the-protocol-test-manager)
+-    [Installing the Protocol Test Manager](#installing-the-protocol-test-manager)
 
-[Running the Protocol Test Manager](#running-the-protocol-test-manager)
+-    [Running the Protocol Test Manager](#running-the-protocol-test-manager)
 
-[Monitoring Test Case Execution](#monitoring-test-case-execution)
+      -    [Monitoring Test Case Execution](#monitoring-test-case-execution)
 
-[Running the Test Cases](#running-the-test-cases)
+      -    [Running the Test Cases](#running-the-test-cases)
 
-[Reviewing the Test Results](#reviewing-the-test-results)
+      -    [Reviewing the Test Results](#reviewing-the-test-results)
 
-[Test Results Output Status Indicators](#test-results-output-status-indicators)
+            -    [Test Results Output Status Indicators](#test-results-output-status-indicators)
 
-[StandardOut Category Status Indicators](#standardout-category-status-indicators)
+            -    [StandardOut Category Status Indicators](#standardout-category-status-indicators)
 
-[ErrorStackTrace Category](#errorstacktrace-category)
+            -    [ErrorStackTrace Category](#errorstacktrace-category)
 
-[ErrorMessage Category](#errormessage-category)
+            -    [ErrorMessage Category](#errormessage-category)
 
-[Other PTM Configuration and Execution Methods](#other-ptm-configuration-and-execution-methods)
+-    [Other PTM Configuration and Execution Methods](#other-ptm-configuration-and-execution-methods)
 
-[Manual Configuration of Test Cases and Properties](#manual-configuration-of-test-cases-and-properties)
+      -    [Manual Configuration of Test Cases and Properties](#manual-configuration-of-test-cases-and-properties)
 
-[Working with Profiles](#working-with-profiles)
+      -    [Working with Profiles](#working-with-profiles)
 
-[Saving a Profile](#saving-a-profile)
+            -    [Saving a Profile](#saving-a-profile)
 
-[Loading a Profile](#loading-a-profile)
+            -    [Loading a Profile](#loading-a-profile)
 
-[Executing Test Cases from the Command Line](#executing-test-cases-from-the-command-line)
+      -    [Executing Test Cases from the Command Line](#executing-test-cases-from-the-command-line)
 
 [Viewing RDP Output Data with Message Analyzer](#viewing-rdp-output-data-with-message-analyzer)
 
-[Install and Configure Microsoft Message Analyzer](#install-and-configure-microsoft-message-analyzer)
+-    [Install and Configure Microsoft Message Analyzer](#install-and-configure-microsoft-message-analyzer)
 
-[Capturing RDP Traffic with Microsoft Message Analyzer](#capturing-rdp-traffic-with-microsoft-message-analyzer)
+-    [Capturing RDP Traffic with Microsoft Message Analyzer](#capturing-rdp-traffic-with-microsoft-message-analyzer)
 
 [Troubleshooting](#troubleshooting)
 
-[Ping Failure](#ping-failure)
+-    [Ping Failure](#ping-failure)
 
-[Test Run Issues](#test-run-issues)
+-    [Test Run Issues](#test-run-issues)
 
-[RDPEUSB Test Cases Fail](#rdpeusb-test-cases-fail)
+-    [RDPEUSB Test Cases Fail](#rdpeusb-test-cases-fail)
 
-[RDPEUDP and RDPEMT Test Cases Fail](#rdpeudp-and-rdpemt-test-cases-fail)
+-    [RDPEUDP and RDPEMT Test Cases Fail](#rdpeudp-and-rdpemt-test-cases-fail)
 
-[RDPBCGR Test Cases Fail When Running in PowerShell Mode](#rdpbcgr-test-cases-fail-when-running-in-powershell-mode)
+-    [RDPBCGR Test Cases Fail When Running in PowerShell Mode](#rdpbcgr-test-cases-fail-when-running-in-powershell-mode)
 
-[RDPEGFX Test Cases Require H264 Enabled on SUT](#rdpegfx-test-cases-require-h264-enabled-on-sut)
+-    [RDPEGFX Test Cases Require H264 Enabled on SUT](#rdpegfx-test-cases-require-h264-enabled-on-sut)
 
-[Test Cases Fail When Using the TLS or CredSSP Protocol](#test-cases-fail-when-using-the-tls-or-credssp-protocol)
+-    [Test Cases Fail When Using the TLS or CredSSP Protocol](#test-cases-fail-when-using-the-tls-or-credssp-protocol)
 
 [Resources and References](#resources-and-references)
 
@@ -208,9 +210,9 @@
 
 [Figure 17. Protocol Test Manager: Context menu commands for Test Case execution](#figure-17-protocol-test-manager-context-menu-commands-for-test-case-execution)
 
-[Figure 18. Protocol Test Manager: RDP Category grouping | Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping-expanded-errormessage-result)
+[Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping-expanded-errormessage-result)
 
-[Figure 19. Protocol Test Manager: RDP BVT test category | StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category-standardout-node)
+[Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category-standardout-node)
 
 [Figure 20. Protocol Test Manager: Case List HTML test results display](#figure-20-protocol-test-manager-case-list-html-test-results-display)
 
@@ -1436,7 +1438,7 @@ RDP_ClientTestSuite.deployment.ptfconfig file.
 | **Enable**                          | The **Enable** is in **VerifySUTDisplay** group and it indicates enable or disable display verification on the **SUT** Computer. This function is only available when running the Test Suite in the protocol-based mode. For related information, see [Configuring Common Test Suite Mode Settings](#configuring-common-test-suite-mode-settings). <br/>Default value: **False** |
 | **BitmapSavePath**                  | The **BitmapSavePath** is in **VerifySUTDisplay** group and this path for saving screenshots on the **SUT** computer. If the **Enable** property is false, ignore this property. <br/>Default value: **../../ScreenShot** |
 | **Algorithm**                       | The **Algorithm** is in **VerifySUTDisplay** group and **IQA** subgroup. The algorithm that is used to assess whether two images are similar. The algorithm should be one of the following:<br/>&emsp;•	**SSIM: Structural Similarity Index**<br/>&emsp;•	**MS-SSIM: Multiscale-SSIM**<br/>&emsp;•	**G-SSIM: Gradient-Based-SSIM** <br/>These algorithms are used to verify the image encoded by using the RemoteFX codec, as described in [MS-RDPRFX](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdprfx/62495a4a-a495-46ea-b459-5cde04c44549). <br/>If Enable is set to false, ignore this property. <br/>Default value: **MS-SSIM** |
-| **AssessValthereshold**             | The **AssessValueThreshold** is in **VerifySUTDisplay** group and **IQA** subgroup. Threshold for the expected assess value, which is used by the image quality assessment (IQA) algorithm when verifying RemoteFX codec output. The Test Suite concludes that two images are similar if the IQA value falls within the threshold boundaries that follow. <br/>The value should be a floating point number in the range:  0 ≤ AssessValueThreshold ≤ 1. <br/>If **Enable** is false, ignore this property. <br/>Default value: **0.98** |
+| **AssessValuethereshold**             | The **AssessValueThreshold** is in **VerifySUTDisplay** group and **IQA** subgroup. Threshold for the expected assess value, which is used by the image quality assessment (IQA) algorithm when verifying RemoteFX codec output. The Test Suite concludes that two images are similar if the IQA value falls within the threshold boundaries that follow. <br/>The value should be a floating point number in the range:  0 ≤ AssessValueThreshold ≤ 1. <br/>If **Enable** is false, ignore this property. <br/>Default value: **0.98** |
 | **ShiftX**                          | The **ShiftX** is in **VerifySUTDisplay** group and it verifies the horizontal position of the RDP client (**SUT**) window relative to the top-left position of the screen. <br/>If **Enable** is set to false, ignore this property.<br/>Default value: **0** |
 | **ShiftY**                          | The **ShiftY** is in **VerifySUTDisplay** group and it verifies the vertical position of the RDP client (**SUT**) window relative to the top-left position of the screen.<br/>If **Enable** is set to false, ignore this property.<br/>Default value: **0** |
 |                                     |                                  |
@@ -1665,13 +1667,13 @@ the operation/s that are performed by it:
 
   -   RDPConnectWithDirectTLS.ps1
 
-  -   RDPConnectWithNegotiationAppoach.ps1
+  -   RDPConnectWithNegotiationApproach.ps1
 
   -   RDPConnectWithDirectCredSSPFullScreen.ps1
 
   -   RDPConnectWithDirectTLSFullScreen.ps1
 
-  -   RDPConnectWithNegotiationAppoachFullScreen.ps1
+  -   RDPConnectWithNegotiationApproachFullScreen.ps1
 
   -   TriggerClientAutoReconnect.ps1
 
