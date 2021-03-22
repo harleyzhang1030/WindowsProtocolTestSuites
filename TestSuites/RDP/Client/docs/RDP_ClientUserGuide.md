@@ -320,7 +320,7 @@ References](#_Resources_and_References) section of this User Guide.
 -   Getting Started Guide for PTF --- learn more about the common
     environment in which Test Cases are run for all Test Suites.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](image\RDP_ClientUserGuide\media\image3.png)*Important*
 
 The **RDP Client Test Suite** tests protocol implementation behaviors
 that are observable on the wire only.
