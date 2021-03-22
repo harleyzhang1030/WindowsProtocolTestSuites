@@ -212,7 +212,7 @@
 
 [Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping--expanded-errormessage-result)
 
-[Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category-standardout-node)
+[Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category--standardout-node)
 
 [Figure 20. Protocol Test Manager: Case List HTML test results display](#figure-20-protocol-test-manager-case-list-html-test-results-display)
 
@@ -307,7 +307,7 @@ Guide is organized under the following major topics:
 
 &emsp;&emsp;[Resources and References](#resources-and-references)
 
-More Information
+*More Information*
 
 **To learn more** about the Test Suite and Test Environment in which
 protocol implementations are tested, you can link off to the following
@@ -320,7 +320,7 @@ References](#_Resources_and_References) section of this User Guide.
 -   Getting Started Guide for PTF --- learn more about the common
     environment in which Test Cases are run for all Test Suites.
 
-![](image\RDP_ClientUserGuide\media\image3.png)*Important*
+![](image\RDP_ClientUserGuide\media\image3.png)Important
 
 The **RDP Client Test Suite** tests protocol implementation behaviors
 that are observable on the wire only.
@@ -415,7 +415,7 @@ Among the most important of these functions are the following:
 
 -   Viewing test results with built-in output data analysis features.
 
-More Information
+*More Information*
 
 To execute Test Cases via .ps1 scripts, see [Running All Test
 Cases](#running-all-test-cases) and [Running Specific Test
@@ -686,7 +686,7 @@ Suite** from the open source code with the use of the **build. ps1**
 file, which enables you to create the **Test Suite** and **Protocol Test
 Manager** components.
 
-More Information
+*More Information*
 
 **To learn more** about the RDP source code, see the [RDP
 source](https://github.com/microsoft/WindowsProtocolTestSuites/tree/main/TestSuites/RDP)
@@ -1683,7 +1683,7 @@ the operation/s that are performed by it:
 
   -   TriggerInputEvents.ps1
 
-More Information
+*More Information*
 
 **To learn more** about PowerShell scripting, go to [Starting Windows PowerShell.](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)
 
@@ -1884,7 +1884,7 @@ perform the procedure below and follow the interactive instructions.
             case, input \'N\' and press \"Enter\" key on the console.The test case will continue to run if you press \"Enter\" key, otherwise, it
             will end and fail.
 
-            More Information 
+            *More Information* 
             <br/>**To learn more** about using the RDP standard security and RDP enhanced security, see MS-RDPBCGR sections [5.3](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdpbcgr/8e8b2cca-c1fa-456c-8ecb-a82fc60b2322)
             and [5.4](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdpbcgr/592a0337-dc91-4de3-a901-e1829665291d).
 
@@ -2126,7 +2126,7 @@ the following steps:
         option on the **Choose configuration method** page of the PTM Wizard. Also note that the **Load Profile** option is discussed in further
         detail ahead in [Working with a Profile](#working-with-profile).
 
-      More Information
+      *More Information*
   
       **To learn more** about the **Do Manual Configuration** feature, see [Manually Configuring Test Cases and Properties](#manually-configuring-test-cases-and-properties).
 
@@ -2264,7 +2264,7 @@ the following steps:
 
     -   **Shell** --- an additional option that enables Unix shell scripts to implement the adapter\'s methods.
 
-    More Information
+    *More Information*
     <br/>**To learn more** about adapter settings, see the topic [Test Run Pre-Configuration](#test-run-pre-configuration).
 
 17. When complete, click **Next** to display the **Run selected test cases** page of the PTM Wizard, as shown in the figure that follows.
@@ -2327,7 +2327,7 @@ features. Notwithstanding errors from actual failures, you can avoid
 this outcome by running only the Test Cases that support the features of
 your environment.
 
-More Information
+*More Information*
 
 **To learn more** about Test Cases and the tests they perform, review
 their descriptions in the *Test Scenarios* section of the [RDP Client Test Design Specification](https://github.com/microsoft/WindowsProtocolTestSuites/blob/main/TestSuites/RDP/Client/docs/RDP_Overview_ClientTestDesignSpecification.md#2.2.1).
@@ -3007,7 +3007,7 @@ Rules** for identification of certain RDP messages.
 
       #### **Figure 26. Message Analyzer Grouping viewer analysis**
 
-      More Information
+      *More Information*
 
       **To learn more** about Message Analyzer operations, including [Using
       and Managing Color
