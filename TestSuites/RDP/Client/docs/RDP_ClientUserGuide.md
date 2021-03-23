@@ -428,8 +428,7 @@ Manager](#using-protocol-test-manager).
 Once you have the **PTM** set up with specific set of Test Cases that
 you run repeatedly for a particular purpose, you can save the test set
 as a **Profile** and thereafter trigger Test Cases to run on demand from
-the command line, as described in [Working with a
-Profile](#_ErrorStackTrace_Category).
+the command line, as described in [Working with a Profile](#working-with-profiles).
 
 You can also use the **Load Profile** feature of **PTM** to load the
 Test Cases of a previously save **Profile** into PTM to run a baseline
@@ -464,8 +463,7 @@ the other are also described here:
     Domain Controller.
 
 To review the architectures of these environments, see the [Workgroup
-Environment](#workgroup-environment) and [Domain
-Environment](#_Verify_Test_Environment) topics. Hardware and other
+Environment](#workgroup-environment) and [Domain Environment](#domain-environment) topics. Hardware and other
 requirements for these environments are described ahead in [Test
 Environment Computer
 Requirements](#test-environment-computer-requirements).
@@ -1337,7 +1335,7 @@ This User Guide provides only the following limited information on configuring t
 
   1.  For domain environments, join all computers to the domain of the **DC computer**.
 
-  2.  Disable active firewalls on all computers as described in [Verify Test Environment Connectivity from the Driver Computer](#_Verify_Test_Environment).
+  2.  Disable active firewalls on all computers as described in [Verify Test Environment Connectivity from the Driver Computer](#verify-test-environment-connectivity-from-the-driver-computer).
 
   3.  To configure the **SUT computer**, perform the following steps:
 
@@ -1595,7 +1593,7 @@ implementations under test, as specified in the topics that follow:
 
   -   [Configuring the Test Suite Mode for MS-RDPEI Events](#configuring-the-test-suite-mode-for-ms-rdpei-events)
 
-  -   [Configuring the Test Suite Mode for MS-RDPEDISP Events](#_Configuring_the_Test_1)
+  -   [Configuring the Test Suite Mode for MS-RDPEDISP Events](#configuring-the-test-suite-mode-for-ms-rdpedisp-events)
 
 ### Configuring Common Test Suite Mode Settings
 
@@ -2123,7 +2121,7 @@ the following steps:
         Unless you are adept at Microsoft RDP testing technologies and you understand how to assess the **SUT** environment with respect to
         manually choosing the correct Test Cases and configuring their properties, you are advised to not use the **Do Manual Configuration**
         option on the **Choose configuration method** page of the PTM Wizard. Also note that the **Load Profile** option is discussed in further
-        detail ahead in [Working with a Profile](#working-with-profile).
+        detail ahead in [Working with a Profile](#working-with-profiles).
 
       *More Information*
   
@@ -2208,7 +2206,7 @@ the following steps:
 
 12. On the **Configure Test Cases** page, click the **Default Group** to
     display the RDP properties that you verified (or revised) in
-    [Configuring the Test Suite](#_ErrorStackTrace_Category).
+    [Configuring the Test Suite](#configuring-the-test-suite).
 
 13. Scroll through the property values to ensure they are correct.
 
@@ -2458,7 +2456,7 @@ the tests were conducted, along with interim results, are described as
 below. Note that the **\[CheckSucceeded\]**, **\[Comment\]**, and
 **\[Debug\]** information tags are shown in the figure that follows.
 
-**\[TestStep\]** --- highlighted in <font color=blue>**Blue**</font>. Describes the details of a
+**\[TestStep\]** --- highlighted in **Blue**. Describes the details of a
 particular step in a Test Case.
 
 **\[Debug\]** --- no highlighting, plain text. Describes actions that
@@ -2471,17 +2469,17 @@ imminent failure. Can also include pointers to protocol specification
 sections that define acceptable data type values and ranges, to assist
 in troubleshooting.
 
-**\[CheckSucceeded\]** --- highlighted in <font color=green>**Green**</font>. Indicates that the
+**\[CheckSucceeded\]** --- highlighted in **Green**. Indicates that the
 actions taken at a particular check point of a **\[TestStep\]** were
 successful.
 
-**\[CheckFailed\]** --- highlighted in <font color=red>**Red**</font>. Indicates that the
+**\[CheckFailed\]** --- highlighted in **Red**. Indicates that the
 actions taken at a particular check point were unsuccessful.
 
-**\[TestPassed\]** --- highlighted in <font color=green>**Green**</font>. Indicates that the Test
+**\[TestPassed\]** --- highlighted in **Green**. Indicates that the Test
 Case passed.
 
-**\[TestFailed\]** --- highlighted in <font color=red>**Red**</font>. Indicates that the Test
+**\[TestFailed\]** --- highlighted in **Red**. Indicates that the Test
 Case failed.
 
 **\[Comment\]** --- no highlighting, plain text. Provides other
