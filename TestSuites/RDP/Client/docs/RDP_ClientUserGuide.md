@@ -311,8 +311,7 @@ Guide is organized under the following major topics:
 
 **To learn more** about the Test Suite and Test Environment in which
 protocol implementations are tested, you can link off to the following
-documents from the [Resources and
-References](#_Resources_and_References) section of this User Guide.
+documents from the [Resources and References](#resources-and-references) section of this User Guide.
 
 -   RDP Overview Client Test Design Specification --- learn more about
     **RDP Client Test Suite** design.
