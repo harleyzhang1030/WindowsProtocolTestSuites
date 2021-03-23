@@ -2249,7 +2249,7 @@ the following steps:
     |-------------------------------|-----------------|
     | Basic RDP SUT Control Adapter | [Configuring Common Test Suite Mode Settings](#configuring-common-test-suite-mode-settings)|
     | RDPEI SUT Control Adapter     | [Configuring the Test Suite Mode for MS-RDPEI Events](#configuring-the-test-suite-mode-for-ms-rdpei-events)|
-    | RDPEDISP SUT Control Adapter  | [Configuring the Test Suite Mode for MS-RDPEDISP Events](#_Configuring_the_Test_1)|
+    | RDPEDISP SUT Control Adapter  | [Configuring the Test Suite Mode for MS-RDPEDISP Events](#configuring-the-test-suite-mode-for-ms-rdpedisp-events)|
     |                               |                 |
 
 16. Click the drop-down arrow for each Adapter and select the
