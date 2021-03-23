@@ -286,7 +286,7 @@ site:
 -   \[MS-RDPEGT\]: Remote Desktop Protocol: Geometry Tracking Virtual
     Channel Protocol Extension
 
-![](image\RDP_ClientUserGuide\media\image1.png) The content of this User
+![](./image/RDP_ClientUserGuide/media/image1.png) The content of this User
 Guide is organized under the following major topics:
 
 &emsp;&emsp;[Getting Started with the RDP Client Test Suite](#getting-started-with-rdp-client-test-suite)
@@ -320,7 +320,7 @@ References](#_Resources_and_References) section of this User Guide.
 -   Getting Started Guide for PTF --- learn more about the common
     environment in which Test Cases are run for all Test Suites.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 The **RDP Client Test Suite** tests protocol implementation behaviors
 that are observable on the wire only.
@@ -363,7 +363,7 @@ print out the table below as a template and you can optionally check off
 completed items in the Table below that you have printed out as a
 template.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 For the [**Workgroup**](#workgroup-environment) environment, skip all
 tasks that are related to domain controller (DC) setup and
@@ -376,12 +376,12 @@ configuration.
 | □ | Download the test suite for the protocol implementation. | For a list of the files that the download package contains, see [Extracted Files and Folders](#extracted-files-and-folders).|
 | □ | Confirm that your Test Environment and computers meet the requirements of the **RDP Client Test Suite**. | For Test Environment requirements information about the RDP Client Test Suite, see [Test Environment Computer Requirements](#test-environment-computer-requirements). |
 | □ | Install the software prerequisites. | For information about software that must be installed on the computers in your Test Environment before the **RDP Client Test Suite** is installed, see [Software Installation](#software-installation). |
-| □ | Set up the **Driver** computer.| See [Setting Up the Driver Computer](#setting-up-the-driver-computer).<br />The **RDP Client Test Suite** will be installed on the **Driver** computer in the procedure of this section. From the **Driver** computer, you will use the **Test Suite** to run the Test Cases that test the protocol implementations on the **SUT** computer. <br/>![](image\RDP_ClientUserGuide\media\image4.png)**Note**<br/>After the installation is complete, the Driver installation files will be in the directory location specified in [Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders). |
-| □ | Set up the **SUT** computer (system under test). | See [Setting Up the Windows-Based SUT](#setting-up-the-windows-based-sut). <br />The **RDP Client Test Suite** will be installed on the **SUT** computer in the procedure of this section. This computer will host the protocol implementations under test.  <br/>![](image\RDP_ClientUserGuide\media\image4.png)**Note**<br/> After the installation is complete, the **SUT** installation files will be in the directory location specified in [Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders). |
+| □ | Set up the **Driver** computer.| See [Setting Up the Driver Computer](#setting-up-the-driver-computer).<br />The **RDP Client Test Suite** will be installed on the **Driver** computer in the procedure of this section. From the **Driver** computer, you will use the **Test Suite** to run the Test Cases that test the protocol implementations on the **SUT** computer. <br/>![](./image/RDP_ClientUserGuide/media/image4.png)**Note**<br/>After the installation is complete, the Driver installation files will be in the directory location specified in [Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders). |
+| □ | Set up the **SUT** computer (system under test). | See [Setting Up the Windows-Based SUT](#setting-up-the-windows-based-sut). <br />The **RDP Client Test Suite** will be installed on the **SUT** computer in the procedure of this section. This computer will host the protocol implementations under test.  <br/>![](./image/RDP_ClientUserGuide/media/image4.png)**Note**<br/> After the installation is complete, the **SUT** installation files will be in the directory location specified in [Reviewing Installed Files and Folders](#reviewing-installed-files-and-folders). |
 | □ | Set up the Domain Controller (**DC**)(optional). | See [Setting Up the Windows-Based Domain Controller](#setting-up-the-windows-based-domain-controller). <br />In this section, you will set up the **DC** by installing Active Directory Domain Services.
 | □ | Set up the network and choose the working environment. | See [Network Configuration](#network-configuration). <br />In this section, you will review the Network Infrastructure requirements and choose either the **Domain** or **Workgroup** environment in which to run the **RDP Client Test Suite**. |
 | □ | Verify connectivity among all test environment computers. | See [Verifying Test Environment Connectivity](#verifying-test-environment-connectivity).  <br />In this section, you will use the Ping command to verify connectivity of all the computers in your test environment. |
-| □ | Configure the **SUT** computer. | See [Configuring Windows Test Environment Computers](#configuring-windows-test-environment-computers) and [Configuring the SUT](#configuring-the-sut). The latter section specifies the preliminary configuration tasks that you will perform on the **SUT** computer. <br/>![](image\RDP_ClientUserGuide\media\image4.png)**Note**<br/> To configure a non-Windows based computer as **SUT**, see below. |
+| □ | Configure the **SUT** computer. | See [Configuring Windows Test Environment Computers](#configuring-windows-test-environment-computers) and [Configuring the SUT](#configuring-the-sut). The latter section specifies the preliminary configuration tasks that you will perform on the **SUT** computer. <br/>![](./image/RDP_ClientUserGuide/media/image4.png)**Note**<br/> To configure a non-Windows based computer as **SUT**, see below. |
 | □ | Configure the **Driver** computer. | See [Configuring the Driver Computer](#configuring-the-driver-computer). <br/>This section specifies the preliminary configuration tasks that you will perform on the **Driver** computer. |
 | □ | Configure non-Windows based computers, including the optional **DC**, that is, if it is not using the Windows operating system. | See [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers).<br/>This section describes limited configuration tasks that you can perform on the **DC** and the **SUT** computers, as this User Guide does not provide detailed instructions for non-Windows configuration. |
 | □ | Configure the **RDP Client Test Suite** settings. | See [Configuring the Test Suite](#configuring-the-test-suite). <br/>In this section, you will validate or change default configuration settings and property values that are set during the **RDP Client Test Suite** installation. <br/>This can include unique test environment and **Test Suite** settings and others, to accommodate your Test Environment or to customize your Test Case runs. |
@@ -424,7 +424,7 @@ Cases](#running-specific-test-cases).
 To execute Test Cases via the **PTM**, see [Using the Protocol Test
 Manager](#using-protocol-test-manager).
 
-![](image\RDP_ClientUserGuide\media\image4.png)Tips
+![](./image/RDP_ClientUserGuide/media/image4.png)Tips
 
 Once you have the **PTM** set up with specific set of Test Cases that
 you run repeatedly for a particular purpose, you can save the test set
@@ -471,7 +471,7 @@ requirements for these environments are described ahead in [Test
 Environment Computer
 Requirements](#test-environment-computer-requirements).
 
-![](image\RDP_ClientUserGuide\media\image1.png) The major topics covered
+![](./image/RDP_ClientUserGuide/media/image1.png) The major topics covered
 in this section include the following:
 
 &emsp;&emsp;[Test Environment Computer Requirements](#test-environment-computer-requirements)
@@ -482,7 +482,7 @@ in this section include the following:
 
 &emsp;&emsp;[Verifying Test Environment Connectivity](#verifying-test-environment-connectivity)
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 The section that follows specifies the Test Environment requirements for
 Windows-based computers only, which includes **Driver**, **SUT**, and
@@ -525,7 +525,7 @@ it should contain the following physical or virtual computers:
 
 -   An **SUT** computer --- same as above.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 Test Cases that require the Interactive mode to run do not execute
 automatically. If your SUT is running a non-Windows based operating
@@ -540,7 +540,7 @@ RDPEI implementations in the **Interactive** mode, where some manual
 operations must be performed by the user in order to continue test
 execution.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If you are using the Protocol Test Manager (PTM) for execution of Test
 Cases, you can set an adapter to the **Interactive** mode as part of
@@ -586,7 +586,7 @@ the table that follows.
 The minimum requirements for the **SUT** computer are listed in the
 table that follows.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If your **SUT** is running a non-Windows based operating system, be sure
 that your installation conforms with the requirements that apply to your
@@ -641,7 +641,7 @@ In addition, the following is required software:
 -   Windows PowerShell 3.0 or later --- enables you to run Test Cases
     with .ps1 script files.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 Windows PowerShell is installed by default with every Windows 7 SP1 and
 later operating system and with every Windows Server 2008 R2 SP1 and
@@ -674,7 +674,7 @@ From the cloned copy of **Test Suite** files, you can use the
 **build.ps1** file to build the RDP client, RDP server, and the Protocol
 Test Manager separately.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If you are planning to create your own Test Cases, you might want to
 review [Running and Debugging Test Cases With Visual
@@ -741,7 +741,7 @@ Lastly, you can use Message Analyzer to capture **Driver** and **SUT**
 computer communications as Test Cases are executing, with the use of the
 Microsoft-Windows-NDIS-PacketCapture provider.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 November 25 2019 - Microsoft Message Analyzer (MMA) was retired and
 removed from public-facing sites on microsoft.com. A private MMA build
@@ -825,7 +825,7 @@ Environment**.
 The following figure illustrates the basic **Domain Environment**
 architecture.
 
-![](image\RDP_ClientUserGuide\media\image6.png)
+![](./image/RDP_ClientUserGuide/media/image6.png)
 
 #### **Figure 2. Domain Environment architecture**
 
@@ -841,7 +841,7 @@ for connectivity between any two Windows-based computers. For
 information about testing connectivity with non-Windows based computers,
 see the administrative documentation for your operating system.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 Before performing the procedure that follows, you will need to disable
 all active firewalls in the Test Environment by running the following
@@ -865,7 +865,7 @@ command string in the Windows command console:
 
   4. Repeat step 3 while substituting the name of each computer in your Test Environment for which you will test connectivity to and from every other computer in the environment.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 Do not proceed with **Test Suite** configuration until you confirm that
 connectivity succeeded, to eliminate the potential for network
@@ -876,7 +876,7 @@ connectivity issues.
 In this section you will set up the Test Environment computers to work
 with the **RDP Client Test Suite**.
 
-![](image\RDP_ClientUserGuide\media\image4.png)
+![](./image/RDP_ClientUserGuide/media/image4.png)
 
 For **Workgroup** environments, skip all tasks in this section that are
 related to setup and configuration of a domain controller (DC).
@@ -925,7 +925,7 @@ or \$HOME/RDP-TestSuite-ClientEP on Linux.
 In the procedure below, you will set up the **Driver Computer** for use
 with the **RDP Client Test Suite**.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 See the *Prerequisites* topic in the Windows Protocol Test Suites
 [Readme](https://github.com/microsoft/WindowsProtocolTestSuites/blob/main/README.md)
@@ -954,7 +954,7 @@ In the procedure of this section, you will set up an **SUT** **Computer** for us
 
     3. Download and extract the **RDP-TestSuite-ClientEP.zip** package to the SUT computer system C:\\ path.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If you have a non-Windows **SUT** computer to set up, see [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers).
 
@@ -964,7 +964,7 @@ If you plan to run your Test Cases in a **Domain Environment**, follow
 the procedure in this section to set up the **DC** for use with the
 **RDP Client Test Suite**.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If you are planning to run your Test Cases in a **Workgroup**
 **Environment**, skip this section.
@@ -975,7 +975,7 @@ If you are planning to run your Test Cases in a **Workgroup**
 
     2. Follow the installation instructions that are provided.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Tip
+![](./image/RDP_ClientUserGuide/media/image4.png)Tip
 
 If you have a non-Windows **DC** computer to set up, see [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers).
 
@@ -993,7 +993,7 @@ In this section, you will configure computers for a Windows-based Test Environme
 
 For general information about configuring computers that are not based on Windows, see [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers).
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 Certain property values of the .ptfconfig file are set when you
 configure them in the procedures that follow. For this reason, in a
@@ -1001,7 +1001,7 @@ Windows-based Test Environment, configure the **SUT** computer and the
 **DC** (if using the **Domain** **Environment**) before you configure
 the **Driver** computer.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 If you are using a **Workgroup Environment**, skip all tasks that are related to the setup and configuration of a **DC** computer.
 
@@ -1025,7 +1025,7 @@ In this section, you will perform a procedure for preliminary configuration of t
 
   1.  Log on to the **SUT** computer as a local Administrator, or with a user account that has administrative privileges.
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Note
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
       You must use the local Administrator account when logging on to the **SUT** computer. If the local **Administrator** account is disabled, enable it as follows:
 
@@ -1041,7 +1041,7 @@ In this section, you will perform a procedure for preliminary configuration of t
 
         &emsp;&emsp;e. Click **OK** to save the password for the local Administrator account.
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Tip
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Tip
 
       You can also run the following commands at the Windows command line to activate the local Administrator account and set the password:
 
@@ -1131,7 +1131,7 @@ In this section, you will perform a procedure for preliminary configuration of t
 
         b.  Optionally you can configure group policy for the RDPEGFX AVC 444 feature as specified below:
 
-          ![](image\RDP_ClientUserGuide\media\image4.png)Note
+          ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
           To enable AVC 444 mode in Windows 10 or Windows Server 2016 and later versions, you will need to configure *two new Group Policies* via the **Local Group Policy Editor**:
 
@@ -1149,7 +1149,7 @@ In this section, you will perform a procedure for preliminary configuration of t
 
                   When enabled on the RDP Server, the H.264/AVC 444 mode will be prioritized when the RDP Client (SUT) and RDP Server (Driver) both support the AVC/H.264 and AVC 444 modes.
 
-                 ![](image\RDP_ClientUserGuide\media\image4.png)Note
+                 ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
                   For Remote Desktop Session Host (RDSH) environments, only full desktop sessions are supported with H.264/AVC 444, as RemoteApp sessions still use the proprietary codecs for now.
           -   **Enable H.264/AVC hardware encoding** --- enable through group policy by performing the steps that follow:
@@ -1158,13 +1158,13 @@ In this section, you will perform a procedure for preliminary configuration of t
 
               4.  Select **Enabled** and click **OK** to exit the dialog.
 
-                  ![](image\RDP_ClientUserGuide\media\image4.png)Note
+                  ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
                   This policy enables hardware encoding for AVC/H.264 when used in conjunction with the AVC 444 mode. When enabled, each remote desktop 
                   monitor will use up to one AVC/H.264 encoder on the server. If all AVC/H.264 encoders are in use, the RDP server will automatically
                   fallback to using software encoding.
         
-        ![](image\RDP_ClientUserGuide\media\image3.png)Important
+        ![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
         The steps that follow are required for the MS-RDPEUSB Test Cases only. If you are not planning to run these Test Cases, skip step 10.
 
@@ -1249,7 +1249,7 @@ In this section, you will perform several tasks that are necessary for configura
 
           .\Config-DriverComputer.ps1
 
-       ![](image\RDP_ClientUserGuide\media\image4.png)Note
+       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
        After the automation script *.\\Config-DriverComputer.ps1* in the previous step runs, the following occurs:
 
@@ -1263,7 +1263,7 @@ In this section, you will perform several tasks that are necessary for configura
 
 The **ComputerName** specification above represents the **Driver** computer name that you configured earlier in the ParamConfig.xml file.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 The certificate **ComputerName**.cer is generated for testing purposes
 and is *not* from a trusted Certificate Authority. Therefore, when you
@@ -1310,7 +1310,7 @@ the ComputerName.cer file to the **SUT** in the steps that follow.
 
 At this point, you can optionally configure Group Policy for the RDPEGFX AVC 444 feature in the steps that follow.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 To enable AVC 444 mode in Windows 10 or Windows Server 2016 and later versions, you will need to configure Group Policy in the **Group Policy Editor**. In the procedure that follows, you will set up an AVC 444-supported environment.
 
@@ -1353,7 +1353,7 @@ This User Guide provides only the following limited information on configuring t
 
   4.  To configure the **DC** computer, install the appropriate domain directory services.
 
-      ![](image\RDP_ClientUserGuide\media\image8.png)Note
+      ![](./image/RDP_ClientUserGuide/media/image8.png)Note
 
       To perform the previous step, you may need to consult the administrative documentation for your operating system.
 
@@ -1382,7 +1382,7 @@ RDP_ClientTestSuite.deployment.ptfconfig file from the following
 
     C:\RDP-TestSuite-ClientEP\Bin
 
-![](image\RDP_ClientUserGuide\media\image1.png) The tasks for configuring the **RDP Test Suite** are described in the following topics:
+![](./image/RDP_ClientUserGuide/media/image1.png) The tasks for configuring the **RDP Test Suite** are described in the following topics:
 
   &emsp;&emsp;&emsp;[Required Configuration Settings](#required-configuration-settings)
 
@@ -1405,7 +1405,7 @@ Cases](#property-settings-required-for-rdp-protocol-extension-test-cases).
 These will also be set in the RDP_ClientTestSuite.deployment.ptfconfig
 file, which you should also verify for valid values.
 
-![](image\RDP_ClientUserGuide\media\image8.png)Note
+![](./image/RDP_ClientUserGuide/media/image8.png)Note
 
 If a data table is not provided in the latter-specified section for a
 specific RDP protocol extension, it means that no additional
@@ -1426,9 +1426,9 @@ RDP_ClientTestSuite.deployment.ptfconfig file.
 | **IPVersion**                       | The IP version used in Test Environment. <br/>Default value: **Ipv4** |
 | **Version**                         | The core RDP protocol version running on the **SUT** computer. <br/>Default value: **10.6** |
 | **Negotiation**                     | The **Negotiation** is in **Security** group, possible value is **True** or **False**. <br/>If the value is **True**, it indicates that the **Test Suite** uses the “Negotiation-Based Approach” to select a security mechanism, as described in [MS-RDPBCGR section 5.4.2.1](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdpbcgr/db98be23-733a-4fd2-b086-002cd2ba02e5). <br/>If the value is False, it indicates that the “Direct Approach” will be used, as described in [MS-RDPBCGR section 5.4.2.2](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdpbcgr/b2bd18fa-0066-4a57-ac25-9139c0df31e0).<br/>Default value: **True** |
-| **Protocol**                        | The **Protocol** is in **Security** group and this security protocol used to secure the RDP session. The possible values are enhanced **TLS, CredSSP**, and standard **RDP**.<br/>Default value: **TLS** <br/> ![](image\RDP_ClientUserGuide\media\image4.png)Note <br/>Test Cases of the MS-RDPEUDP and MS-RDPEMT protocols must be run under TLS or CredSSP security. |
-| **Level**                           | The **Level** is in **Security** group and **Encryption** subgroup. It is encryption level of the RDP session. The possible values are **None**, **Low**, **Client**, **High**, and **FIPS**. <br/>Default value: **None** <br/> ![](image\RDP_ClientUserGuide\media\image4.png)Note <br/>If the **Protocol** value is set to **TLS** or **CredSSP**, the encryption level property must be set to **None**. Otherwise, use one of the other encryption levels. |
-| **Method**                          | The **Method** is in **Security** group and **Encryption** subgroup. It is encryption method of the RDP session. The possible values are, **None**, **40bit**, **56bit**, **128bit**, **FIPS**. <br/>Default value: **None** <br/> ![](image\RDP_ClientUserGuide\media\image4.png)Note <br/>If the **Protocol** value is set to **TLS** or **CredSSP**, this property must be set to **None**. If the **Level** value is set to **FIPS**, this property must be set to **FIPS**. |
+| **Protocol**                        | The **Protocol** is in **Security** group and this security protocol used to secure the RDP session. The possible values are enhanced **TLS, CredSSP**, and standard **RDP**.<br/>Default value: **TLS** <br/> ![](./image/RDP_ClientUserGuide/media/image4.png)Note <br/>Test Cases of the MS-RDPEUDP and MS-RDPEMT protocols must be run under TLS or CredSSP security. |
+| **Level**                           | The **Level** is in **Security** group and **Encryption** subgroup. It is encryption level of the RDP session. The possible values are **None**, **Low**, **Client**, **High**, and **FIPS**. <br/>Default value: **None** <br/> ![](./image/RDP_ClientUserGuide/media/image4.png)Note <br/>If the **Protocol** value is set to **TLS** or **CredSSP**, the encryption level property must be set to **None**. Otherwise, use one of the other encryption levels. |
+| **Method**                          | The **Method** is in **Security** group and **Encryption** subgroup. It is encryption method of the RDP session. The possible values are, **None**, **40bit**, **56bit**, **128bit**, **FIPS**. <br/>Default value: **None** <br/> ![](./image/RDP_ClientUserGuide/media/image4.png)Note <br/>If the **Protocol** value is set to **TLS** or **CredSSP**, this property must be set to **None**. If the **Level** value is set to **FIPS**, this property must be set to **FIPS**. |
 | **IsClientToServerEncrypted**       | The **IsClientToServerEncrypted** is in **Security** group and indicates whether or not client-to-server traffic is encrypted. The possible values are **True** and **False**. <br/>Default value: **True** |
 | **IsWindowsImplementation**         | Indicates if the **SUT** computer is hosting a Windows implementation. The possible values are **True** and **False**.<br/>Default value: **True** |
 | **DropConnectionForInvalidRequest** | The **DropConnectionForInvalidRequest** is in **Security** group and indicates if the **SUT** computer will drop the connection when an invalid request is received. The possible values are **True** and **False**. <br/>Default value: **True** |
@@ -1513,7 +1513,7 @@ The following data table describes the property settings required for MS-RDPEDIS
 
 | **Property**              | **Description/Value**                   |
 |---------------------------|-----------------------------------------|
-| **RdpedispTestImage**     | The path to an image file that is used to in the performance of an RDPEDISP test case. <br/>Default value: **../TestData/RdpedispTestImage.bmp**. This image is included in the **RDP Test Suite**. ![](image\RDP_ClientUserGuide\media\image4.png) <br/> There is no specific requirement for the image. |
+| **RdpedispTestImage**     | The path to an image file that is used to in the performance of an RDPEDISP test case. <br/>Default value: **../TestData/RdpedispTestImage.bmp**. This image is included in the **RDP Test Suite**. ![](./image/RDP_ClientUserGuide/media/image4.png) <br/> There is no specific requirement for the image. |
 | **OriginalDesktopWidth**  | The original screen resolution width. <br/> Default value: **1024** |
 | **OriginalDesktopHeight** | The original screen resolution height. <br/> Default value: **768** |
 | **ChangedDesktopWidth**   | The changed screen resolution width. <br/> Default value: **1152** |
@@ -1561,13 +1561,13 @@ You can use any of the following methods to run your Test Cases:
     user interface (UI), as described in [Using Protocol Test
     Manager](#using-protocol-test-manager).
 
-![](image\RDP_ClientUserGuide\media\image8.png)Note
+![](./image/RDP_ClientUserGuide/media/image8.png)Note
 
 If you choose the latter option, PTM will need to be installed and
 configured to generate a set of Test Cases that you can modify or
 execute as is.
 
-![](image\RDP_ClientUserGuide\media\image1.png) The major topics covered
+![](./image/RDP_ClientUserGuide/media/image1.png) The major topics covered
 in this section include the following:
 
   &emsp;&emsp;[Test Run Pre-Configuration](#test-run-pre-configuration)
@@ -1618,7 +1618,7 @@ can use to control the RDP client, as follows:
 
 -   **Managed**
 
-![](image\RDP_ClientUserGuide\media\image8.png)Note
+![](./image/RDP_ClientUserGuide/media/image8.png)Note
 
 If you plan to run Test Cases in PowerShell mode, you must log on with the local Administrator account.
 
@@ -1870,7 +1870,7 @@ perform the procedure below and follow the interactive instructions.
 
       When this **Test Case** begins running, the following dialog is displayed:
 
-       ![Text Description automatically generated](image\RDP_ClientUserGuide\media\image10.jpeg)
+       ![Text Description automatically generated](./image/RDP_ClientUserGuide/media/image10.jpeg)
 
         #### **Figure 3. RDPConnectWithNegotiationApproach dialog**
 
@@ -1892,12 +1892,12 @@ perform the procedure below and follow the interactive instructions.
             Value** in the **Action Results** field, and then click the **Succeed** button. Otherwise, if you cannot start the RDP connection, specify a negative number (such as -1) as the **Return
             Value** in the **Action Results** field, specify the error message in the **Failure Message** field, and then click **Fail**.
 
-            ![](image\RDP_ClientUserGuide\media\image4.png)Note 
+            ![](./image/RDP_ClientUserGuide/media/image4.png)Note 
                    <br/>The Test Case should continue to run if you clicked the **Succeed** button, otherwise the Test Case will fail and end.
 
   3.  After the formerly running **Test Case** finishes, observe that the following dialog displays on the **Driver** computer:
 
-       ![Text Description automatically generated](image\RDP_ClientUserGuide\media\image12.jpeg)
+       ![Text Description automatically generated](./image/RDP_ClientUserGuide/media/image12.jpeg)
          #### **Figure 4. TriggerClientDisconnectAll dialog**
 
          According to the **Help Message**, you will do:
@@ -1925,7 +1925,7 @@ configured in **PowerShell** mode. To test this example on the **Driver** comput
 
    3.  Observe that the following RDP **Negotiate** screen displays on the **SUT** computer:
 
-       ![](image\RDP_ClientUserGuide\media\image13.png)
+       ![](./image/RDP_ClientUserGuide/media/image13.png)
 
          #### **Figure 5. RDP Touch screen prompt**
 
@@ -1935,7 +1935,7 @@ configured in **PowerShell** mode. To test this example on the **Driver** comput
 
    6. When the Test Case is done, wait until the **SUT** computer disconnects from the **Driver** computer, which signifies the end of the Test Case.
 
-       ![](image\RDP_ClientUserGuide\media\image14.png)
+       ![](./image/RDP_ClientUserGuide/media/image14.png)
 
          #### **Figure 6. RDP Touch screen response**
 
@@ -1961,7 +1961,7 @@ If you are creating your own Test Cases, typically in a C\# project, you can use
 project for your environment in which you can run and debug your Test Cases. This solution file is available [here](https://github.com/microsoft/WindowsProtocolTestSuites/tree/main/TestSuites/RDP/Client/src)
 on GitHub.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 To proceed with Visual Studio debugging, you will need to have created a Visual Studio project for the **RDP Test Suite** from the RDP source
 code, as described earlier in [Other RDP Test Suite Acquisition Methods](#other-rdp-client-test-suite-acquisition-methods). If you did not yet acquire the source code, do the following:
@@ -1974,7 +1974,7 @@ code, as described earlier in [Other RDP Test Suite Acquisition Methods](#other-
 
            C:\RDPTestSuiteSource\
 
-       ![](image\RDP_ClientUserGuide\media\image4.png)Note
+       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
         <br/>You should be able to click the **Code** button at the formerly specified GitHub directory and download a .zip file with all the RDP directories required for cloning.
 
 To proceed with running and debugging your custom Test Cases, perform the steps that follow:
@@ -2041,7 +2041,7 @@ exposes for you to perform:
 
     -   Analyze the results of Test Case execution.
 
-![](image\RDP_ClientUserGuide\media\image1.png) The major topics covered in this section
+![](./image/RDP_ClientUserGuide/media/image1.png) The major topics covered in this section
 include the following:
 
   &emsp;&emsp;[Installing the Protocol Test Manager](#installing-the-protocol-test-manager)
@@ -2085,13 +2085,13 @@ the following steps:
         The **Select Test Suite** tab displays several Test Suites including  **File Sharing**, **Security**, **RDP**, and so on. Note that the only
           active **Test Suite** on the opening page of the PTM Wizard is **RDP**, as indicated by the live **Run** and **Configuration Wizard** links on the right side of the UI.
 
-      ![](image\RDP_ClientUserGuide\media\image17.png)
+      ![](./image/RDP_ClientUserGuide/media/image17.png)
 
          #### **Figure 7. Protocol Test Manager: Launching the Configuration Wizard for RDP Client Test Suite**
 
   2.  Click the **Configuration Wizard** link to begin the **Test Suite** configuration process.
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Note
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
       If this is for first time use, click the **Configuration Wizard** link
       to start the **RDP Test Suite** configuration process. Thereafter,
@@ -2102,7 +2102,7 @@ the following steps:
 
       At any time, you can resume configuration of the **Test Suite**, by clicking **Configuration Wizard**.
 
-       ![](image\RDP_ClientUserGuide\media\image18.png)
+       ![](./image/RDP_ClientUserGuide/media/image18.png)
 
          #### **Figure 8. Protocol Test Manager: Reviewing the RDP Test Suite family of protocols**
 
@@ -2111,7 +2111,7 @@ the following steps:
 
   4.  Click **Next** to display the **Choose configuration method** page of the PTM Wizard.
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Note
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
       It is unnecessary to click the **Configure Environment** link after reviewing the test environment, given that you will have already performed the indicated procedures earlier in this User Guide.
 
@@ -2119,7 +2119,7 @@ the following steps:
       the process of retrieving the capabilities of the SUT implementation (also click **Yes** to the **Warning** message that displays). The retrieved capabilities are used to automatically configure the
       **Test Suite** and select a default set of Test Cases for the assessed environment.
 
-       ![](image\RDP_ClientUserGuide\media\image3.png)Caution
+       ![](./image/RDP_ClientUserGuide/media/image3.png)Caution
 
         Unless you are adept at Microsoft RDP testing technologies and you understand how to assess the **SUT** environment with respect to
         manually choosing the correct Test Cases and configuring their properties, you are advised to not use the **Do Manual Configuration**
@@ -2130,13 +2130,13 @@ the following steps:
   
       **To learn more** about the **Do Manual Configuration** feature, see [Manually Configuring Test Cases and Properties](#manually-configuring-test-cases-and-properties).
 
-      ![](image\RDP_ClientUserGuide\media\image19.png)
+      ![](./image/RDP_ClientUserGuide/media/image19.png)
 
       #### **Figure 9. Protocol Test Manager: Choosing the configuration method**
 
       After you click **Run Auto-Detection**, the **Auto-Detection** page of the PTM Wizard displays, as shown in the figure that follows.
 
-      ![](image\RDP_ClientUserGuide\media\image20.png)
+      ![](./image/RDP_ClientUserGuide/media/image20.png)
 
       #### **Figure 10. Protocol Test Manager: Verifying SUT connection parameters**
 
@@ -2149,14 +2149,14 @@ the following steps:
 
 8.  After the initial detection process completes, click **Next** to display the **Detection Result** page of the PTM Wizard, as shown in the figure that follows:
 
-    ![](image\RDP_ClientUserGuide\media\image21.png)
+    ![](./image/RDP_ClientUserGuide/media/image21.png)
 
       #### **Figure 11. Protocol Test Manager: Reviewing the Detection Results**
 
 9.  In the **Detection Result** page of the Wizard, review the data that appears under the **Protocols Support Info** 
     and **Feature Support Info** nodes to ensure that the supported protocols and features are as you expect.
 
-    ![](image\RDP_ClientUserGuide\media\image4.png)Tip
+    ![](./image/RDP_ClientUserGuide/media/image4.png)Tip
 
     If there are unexpected unsupported entities in the detection results,
     you may want to consider re-examining the SUT configuration processes
@@ -2179,12 +2179,12 @@ the following steps:
     Each time you select a Test Case node, the total number of selected Test Cases appears just to the right of the **Selected Test Cases** label. 
     Take note that if a Test Case belongs to multiple categories, it is listed in each category.
 
-    ![](image\RDP_ClientUserGuide\media\image3.png)Important
+    ![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
     If the detection status of a feature or protocol is not supported, it will appear in italics and will provide a tool tip message to that
     effect, that is, if you mouse-hover over that particular component. See *RDPEUSB* in the figure below as an example.
 
-    ![](image\RDP_ClientUserGuide\media\image22.png)
+    ![](./image/RDP_ClientUserGuide/media/image22.png)
 
       #### **Figure 12. Protocol Test Manager: Selecting (filtering) Test Cases**
 
@@ -2203,7 +2203,7 @@ the following steps:
 
     e.  Click **Next** to display the **Configure Test Cases** page of the Wizard, as shown in the figure that follows.
 
-      ![](image\RDP_ClientUserGuide\media\image23.png)
+      ![](./image/RDP_ClientUserGuide/media/image23.png)
 
       #### **Figure 13. Protocol Test Manager: Reviewing/configuring Test Case properties**
 
@@ -2237,7 +2237,7 @@ the following steps:
     e.  When complete, click **Next** to display the **Configure Adapters**
     page of the Wizard, as shown in the figure that follows.
 
-    ![](image\RDP_ClientUserGuide\media\image24.png)
+    ![](./image/RDP_ClientUserGuide/media/image24.png)
 
       #### **Figure 14. Protocol Test Manager: Configuring the Adapters**
 
@@ -2269,13 +2269,13 @@ the following steps:
 
 17. When complete, click **Next** to display the **Run selected test cases** page of the PTM Wizard, as shown in the figure that follows.
 
-    ![](image\RDP_ClientUserGuide\media\image25.png)
+    ![](./image/RDP_ClientUserGuide/media/image25.png)
 
     #### **Figure 15. Protocol Test Manager: Running the selected Test Cases**
 
 18. Observe that the following options in the lower sector of the UI are available for running Test Cases from the **Run Selected Test Cases** tab of the PTM:
 
-    ![](image\RDP_ClientUserGuide\media\image3.png)Important
+    ![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
     Do not execute Test Cases** **now! Only execute the tests from [Running the Test Cases](#running-the-test-cases) ahead**.
 
@@ -2314,11 +2314,11 @@ observe these categories being incrementally updated:
 
       For example, if a property set in the > RDPTestSuite.Deployment.ptfconfig file is incorrectly configured, or a Test Case conflicts with an unexpected or invalid property value, that Test Case can finish as Inconclusive.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 In the PTM, you can drag the separator between the Test Case list view and the right-hand side output log pane to adjust the width of the window for better viewing.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 If any of the core/preconfigured Test Cases in a test environment do not
 support certain features, errors will appear in the command console and
@@ -2352,11 +2352,11 @@ To run your Test Cases, perform the steps of the procedure that follows.
       unselect one or more tests to exclude them from running, as shown in
       the figure that follows.
 
-      ![](image\RDP_ClientUserGuide\media\image26.png)
+      ![](./image/RDP_ClientUserGuide/media/image26.png)
 
       #### **Figure 16. Protocol Test Manager: Removing Test Cases from execution**
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Tip
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Tip
 
       You can also run Test Cases from the context menu that appears when
       you right-click in the Test Case list view itself. The context menu
@@ -2373,7 +2373,7 @@ To run your Test Cases, perform the steps of the procedure that follows.
       afterwards, all Test Cases listed under the **Not Run** checkbox will
       execute.
 
-      ![](image\RDP_ClientUserGuide\media\image27.png)
+      ![](./image/RDP_ClientUserGuide/media/image27.png)
 
       #### **Figure 17. Protocol Test Manager: Context menu commands for Test Case execution**
 
@@ -2389,7 +2389,7 @@ To run your Test Cases, perform the steps of the procedure that follows.
     labels as described in [Monitoring Test Case
     Execution](#monitoring-test-case-execution).
 
-    ![](image\RDP_ClientUserGuide\media\image4.png)Note
+    ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
     You can also view the results of Test Case execution in the command consoles that host test execution. However, note that the PTM makes
     the results more accessible and understandable through categorization, summaries, status indicators, and built-in logs, as described just ahead.
@@ -2408,7 +2408,7 @@ that can pinpoint the cause of failures very rapidly. In addition, you
 can launch an HTML-based display of output results that independently
 reproduces the PTM output data displays.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 As a developer who is using a Microsoft Test Suite to test real-world
 protocol implementations, you can utilize the PTM analysis features to
@@ -2432,7 +2432,7 @@ test results are described in the table that follows:
 | Test Case functionality | The general purpose of a Test Case. | Typically described in a **[Comment]** tag that appears in the [StandardOut](#standardout-category-status-indicators) category of results. |
 | Debug output data | Informative data that is displayed in tags in the [StandardOut](#standardout-category-status-indicators) category of results. | Includes data that displays in information tags such as the following: <br/>&emsp;-	[TestInProgress] <br/>&emsp;-	[Comment] <br/>&emsp;-	[Debug] <br/>&emsp;-	[CheckPoint] <br/>&emsp;-	[CheckSucceeded] <br/>&emsp;-	[CheckFailed] <br/>&emsp;-	 [TestStep] <br/>&emsp;-	[TestPassed] <br/>&emsp;-	[TestFailed] <br/>See [StandardOut Category Status Indicators](#standardout-category-status-indicators) for descriptions. |
 | Error output data | Holds data that you can analyze to identify the source of Test Case failures. | Appears in the [ErrorStackTrace](#errorStackTrace-category) and [ErrorMessage](#errorMessage-category) categories of results. |
-| Test case status | ![](image\RDP_ClientUserGuide\media\image28.png) — indicates the executed Test Case status as **Passed**. <br/> ![](image\RDP_ClientUserGuide\media\image29.png) — indicates the executed Test Case status as **Inconclusive**. <br/>![](image\RDP_ClientUserGuide\media\image30.png) — indicates the Test Case status is **Not Run**. <br/> ![](image\RDP_ClientUserGuide\media\image31.png)— indicates the executed Test Case status as **Failed**.                | These indicators appear immediately to the right of the Test Case check box after test execution, to indicate the test result status; the exception is the blue **Not Run** status indicator, which appears prior to test execution and persists this status if a Text Case did not run.  |
+| Test case status | ![](./image/RDP_ClientUserGuide/media/image28.png) — indicates the executed Test Case status as **Passed**. <br/> ![](./image/RDP_ClientUserGuide/media/image29.png) — indicates the executed Test Case status as **Inconclusive**. <br/>![](./image/RDP_ClientUserGuide/media/image30.png) — indicates the Test Case status is **Not Run**. <br/> ![](./image/RDP_ClientUserGuide/media/image31.png)— indicates the executed Test Case status as **Failed**.                | These indicators appear immediately to the right of the Test Case check box after test execution, to indicate the test result status; the exception is the blue **Not Run** status indicator, which appears prior to test execution and persists this status if a Text Case did not run.  |
 |                  |                          |                      |
 
 *This same information is repeated as the text of a hyperlink that appears in the upper-right-hand sector of the PTM. This hyperlink opens an HTML-based display of test results.
@@ -2446,7 +2446,7 @@ Note that in the expanded **RDP7.1** test result node below, **RDPEUSB**
 errors occurred because it is an unsupported feature, as described
 earlier in the Auto detect portion of [Running the Protocol Test Manager](#installing-the-protocol-test-manager).
 
-![](image\RDP_ClientUserGuide\media\image32.png)
+![](./image/RDP_ClientUserGuide/media/image32.png)
 
 #### **Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result**
 
@@ -2489,7 +2489,7 @@ Case failed.
 information such as brief descriptions of Test Case actions, states,
 values, and so on.
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 Most of the above information tags are also returned from the
 **Protocol-Test-Suite** message provider that you can use to detect
@@ -2504,11 +2504,11 @@ displayed. In the case of the selected
 **\[CheckSucceeded\]** tag verifies that the **SUT** should support the
 **Auto-Reconnect** feature.
 
-![](image\RDP_ClientUserGuide\media\image33.png)
+![](./image/RDP_ClientUserGuide/media/image33.png)
 
 #### **Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node**
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 You can display Test Cases that meet specified search criteria by typing
 a search term in the **Find** text box and pressing the **Enter** key on
@@ -2534,11 +2534,11 @@ analysis perspectives of the data, as follows:
   -   **Class** --- groups the Test Case results in nodes that contain the
     name of the protocols under test.
 
-![](image\RDP_ClientUserGuide\media\image34.png)
+![](./image/RDP_ClientUserGuide/media/image34.png)
 
 #### **Figure 20. Protocol Test Manager: Case List HTML test results display**
 
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 You can also search for Test Cases by typing a search term in the
 **Keyword** text box and clicking the **Go** button. You can also filter
@@ -2583,7 +2583,7 @@ goals that are specific to your custom environment.
 Lastly, this section describes how to run Test Cases from a command line
 tool known as PTMCli.exe.
 
-![](image\RDP_ClientUserGuide\media\image1.png)The following topics in this section cover the concepts that are described above:
+![](./image/RDP_ClientUserGuide/media/image1.png)The following topics in this section cover the concepts that are described above:
 
 &emsp;&emsp;[Manual Configuration of Test Cases and Properties](#manual-configuration-of-test-cases-and-properties)
 
@@ -2644,7 +2644,7 @@ recommended that you run the **RDP Client Test Suite** at least once and
 then save a **Profile** that extracts the selected Test Cases and
 related configuration information.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 If you want to save specific Test Cases in a **Profile**, you must
 select them before your save the **Profile**, otherwise the **Profile**
@@ -2672,7 +2672,7 @@ You can save a **Profile** by performing the steps that follow.
 1.  In the **Run Selected Test Cases** page of the PTM Wizard, select
     the Test Cases that you want in your **Profile**.
 
-    ![](image\RDP_ClientUserGuide\media\image3.png)Important
+    ![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
     Please ensure that you *select* Test Cases *before* saving your
     **Profile**. This is especially important if you intend to use the
@@ -2688,7 +2688,7 @@ You can save a **Profile** by performing the steps that follow.
     the current test configuration along with all the underlying related
     properties.
 
-    ![](image\RDP_ClientUserGuide\media\image35.png)
+    ![](./image/RDP_ClientUserGuide/media/image35.png)
     #### **Figure 21. Protocol Test Manager: Saving a test case Profile**
 
     This action should open a **Save** dialog. By default, the **Profile**
@@ -2736,7 +2736,7 @@ extract this zip package to C: \\PTMCli
 To execute the Test Cases of a **Profile** by using a command string,
 perform the procedure that follows:
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 You *should not* run the PTMCli.exe application while the PTM is either
 open or has Test Case execution in progress. If you do, the PTMCli.exe
@@ -2757,7 +2757,7 @@ application will not start or an error will occur, respectively.
 
           PTMCli.exe -p <profilepath> -s
 
-       ![](image\RDP_ClientUserGuide\media\image4.png)Note
+       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
        
        The -p switch requires you to specify the directory path to a saved
         **Profile** and the -s switch in this command enforces execution of
@@ -2776,7 +2776,7 @@ application will not start or an error will occur, respectively.
        command line while the test results scroll through the command shell
        display.
        
-![](image\RDP_ClientUserGuide\media\image4.png)Note
+![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
 For additional information about functionality that is available with the PTMCli tool, use the -help switch to display it:
 
@@ -2804,7 +2804,7 @@ when you are debugging Test Cases; as Message Analyzer has many types of
 filtering that you can apply to manipulate the data display to expose
 and isolate target data of interest.
 
-![](image\RDP_ClientUserGuide\media\image3.png)Important
+![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
 As of November 25 2019 - Microsoft Message Analyzer (MMA) was retired
 and removed from public-facing sites on microsoft.com. A private MMA
@@ -2819,7 +2819,7 @@ This section describes how to install and configure MMA for use with the
 Rules** for detection of certain **RDP Client Test Suite** output
 message types.
 
-![](image\RDP_ClientUserGuide\media\image1.png) The major topics covered in this section
+![](./image/RDP_ClientUserGuide/media/image1.png) The major topics covered in this section
 include the following:
 
   &emsp;&emsp;[Install and Configure Microsoft Message Analyzer](#install-and-configure-microsoft-message-analyzer)
@@ -2847,7 +2847,7 @@ the steps that follow:
 
           C:\Program Files\Microsoft Message Analyzer\OPNAndConfiguration\OPNs\Microsoft\Windows\RemoteDesktop\
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Caution
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Caution
       
       If this is not the first startup of MMA, then copy the OPN files to the following directory instead:
 
@@ -2869,7 +2869,7 @@ the steps that follow:
 
       Observe that the RDP **Color Rules** display in the **Network** category, as shown in the figure that follows.
 
-      ![](image\RDP_ClientUserGuide\media\image36.png)
+      ![](./image/RDP_ClientUserGuide/media/image36.png)
 
       #### **Figure 22. Message Analyzer Select Items to Import dialog**
 
@@ -2877,7 +2877,7 @@ the steps that follow:
 
   11. In the **Manage Color Rule** dialog that appears, ensure that all the RDP **Color Rules** are selected in the **Network** category under **My Items**.
 
-       ![](image\RDP_ClientUserGuide\media\image4.png)Note
+       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
        
        When you are reviewing trace results, all the RDP **Color Rules**
        should be selected and highlighting the appropriate messages. However,
@@ -2915,7 +2915,7 @@ Rules** for identification of certain RDP messages.
 
       The specified message providers should display in the **New Session** dialog, as shown in the figure that follows:
 
-      ![](image\RDP_ClientUserGuide\media\image37.png)
+      ![](./image/RDP_ClientUserGuide/media/image37.png)
 
       #### **Figure 23. Message Analyzer session message providers**
 
@@ -2942,11 +2942,11 @@ Rules** for identification of certain RDP messages.
       logging messages while filtering out all the others, as shown
       immediately below.
 
-      ![](image\RDP_ClientUserGuide\media\image38.png)
+      ![](./image/RDP_ClientUserGuide/media/image38.png)
 
       #### **Figure 24. Message Analyzer trace results with filtering**
 
-      ![](image\RDP_ClientUserGuide\media\image4.png)Note
+      ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
       At any point, you can merge the messages captured by the
       Microsoft-Windows-NDIS-PacketCapture provider back into the **Analysis
@@ -2976,7 +2976,7 @@ Rules** for identification of certain RDP messages.
       may see your data organized in the **Grouping Viewer** in a fashion
       similar to what is shown in the figure that follows:
 
-      ![](image\RDP_ClientUserGuide\media\image39.png)
+      ![](./image/RDP_ClientUserGuide/media/image39.png)
 
       #### **Figure 25. Message Analyzer Grouping viewer with RDP data**
 
@@ -3003,7 +3003,7 @@ Rules** for identification of certain RDP messages.
       when you are setting up the **Grouping Viewer**, as shown in the right
       sector of the UI in the figure that follows.
       
-      ![](image\RDP_ClientUserGuide\media\image40.png)
+      ![](./image/RDP_ClientUserGuide/media/image40.png)
 
       #### **Figure 26. Message Analyzer Grouping viewer analysis**
 
@@ -3022,7 +3022,7 @@ Rules** for identification of certain RDP messages.
 In this section you will find information about troubleshooting common
 **RDP Client Test Suite** and environment issues.
 
-![](image\RDP_ClientUserGuide\media\image1.png) The major topics covered in this section include the following:
+![](./image/RDP_ClientUserGuide/media/image1.png) The major topics covered in this section include the following:
 
   &emsp;&emsp;[Ping Failure](#ping-failure)
 
