@@ -190,43 +190,45 @@
 
 [Figure 7. Protocol Test Manager: Launching the Configuration Wizard for RDP Client Test Suite](#figure-7-protocol-test-manager-launching-the-configuration-wizard-for-rdp-client-test-suite)
 
-[Figure 8. Protocol Test Manager: Reviewing the RDP Test Suite family of protocols](#figure-8-protocol-test-manager-reviewing-the-rdp-test-suite-family-of-protocols)
+[Figure 8. Protocol Test Manager: Selecting RDP Client Test Suite Folder Path](#figure-8-protocol-test-manager-selecting-rdp-client-test-suite-folder-path)
 
-[Figure 9. Protocol Test Manager: Choosing the configuration method](#figure-9-protocol-test-manager-choosing-the-configuration-method)
+[Figure 9. Protocol Test Manager: Reviewing the RDP Test Suite family of protocols](#figure-9-protocol-test-manager-reviewing-the-rdp-test-suite-family-of-protocols)
 
-[Figure 10. Protocol Test Manager: Verifying SUT connection parameters](#figure-10-protocol-test-manager-verifying-sut-connection-parameters)
+[Figure 10. Protocol Test Manager: Choosing the configuration method](#figure-10-protocol-test-manager-choosing-the-configuration-method)
 
-[Figure 11. Protocol Test Manager: Reviewing the Detection Results](#figure-11-protocol-test-manager-reviewing-the-detection-results)
+[Figure 11. Protocol Test Manager: Verifying SUT connection parameters](#figure-11-protocol-test-manager-verifying-sut-connection-parameters)
 
-[Figure 12. Protocol Test Manager: Selecting (filtering) Test Cases](#figure-12-protocol-test-manager-selecting-filtering-test-cases)
+[Figure 12. Protocol Test Manager: Reviewing the Detection Results](#figure-12-protocol-test-manager-reviewing-the-detection-results)
 
-[Figure 13. Protocol Test Manager: Reviewing/configuring Test Case properties](#figure-13-protocol-test-manager-reviewingconfiguring-test-case-properties)
+[Figure 13. Protocol Test Manager: Selecting (filtering) Test Cases](#figure-13-protocol-test-manager-selecting-filtering-test-cases)
 
-[Figure 14. Protocol Test Manager: Configuring the Adapters](#figure-14-protocol-test-manager-configuring-the-adapters)
+[Figure 14. Protocol Test Manager: Reviewing/configuring Test Case properties](#figure-14-protocol-test-manager-reviewingconfiguring-test-case-properties)
 
-[Figure 15. Protocol Test Manager: Running the selected Test Cases](#figure-15-protocol-test-manager-running-the-selected-test-cases)
+[Figure 15. Protocol Test Manager: Configuring the Adapters](#figure-15-protocol-test-manager-configuring-the-adapters)
 
-[Figure 16. Protocol Test Manager: Removing Test Cases from execution](#figure-16-protocol-test-manager-removing-test-cases-from-execution)
+[Figure 16. Protocol Test Manager: Running the selected Test Cases](#figure-16-protocol-test-manager-running-the-selected-test-cases)
 
-[Figure 17. Protocol Test Manager: Context menu commands for Test Case execution](#figure-17-protocol-test-manager-context-menu-commands-for-test-case-execution)
+[Figure 17. Protocol Test Manager: Removing Test Cases from execution](#figure-17-protocol-test-manager-removing-test-cases-from-execution)
 
-[Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-18-protocol-test-manager-rdp-category-grouping--expanded-errormessage-result)
+[Figure 18. Protocol Test Manager: Context menu commands for Test Case execution](#figure-18-protocol-test-manager-context-menu-commands-for-test-case-execution)
 
-[Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-19-protocol-test-manager-rdp-bvt-test-category--standardout-node)
+[Figure 19. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result](#figure-19-protocol-test-manager-rdp-category-grouping--expanded-errormessage-result)
 
-[Figure 20. Protocol Test Manager: Case List HTML test results display](#figure-20-protocol-test-manager-case-list-html-test-results-display)
+[Figure 20. Protocol Test Manager: RDP BVT test category \| StandardOut node](#figure-20-protocol-test-manager-rdp-bvt-test-category--standardout-node)
 
-[Figure 21. Protocol Test Manager: Saving a test case Profile](#figure-21-protocol-test-manager-saving-a-test-case-profile)
+[Figure 21. Protocol Test Manager: Case List HTML test results display](#figure-21-protocol-test-manager-case-list-html-test-results-display)
 
-[Figure 22. Message Analyzer Select Items to Import dialog](#figure-22-message-analyzer-select-items-to-import-dialog)
+[Figure 22. Protocol Test Manager: Saving a test case Profile](#figure-22-protocol-test-manager-saving-a-test-case-profile)
 
-[Figure 23. Message Analyzer session message providers](#figure-23-message-analyzer-session-message-providers)
+[Figure 23. Message Analyzer Select Items to Import dialog](#figure-23-message-analyzer-select-items-to-import-dialog)
 
-[Figure 24. Message Analyzer trace results with filtering](#figure-24-message-analyzer-trace-results-with-filtering)
+[Figure 24. Message Analyzer session message providers](#figure-24-message-analyzer-session-message-providers)
 
-[Figure 25. Message Analyzer Grouping viewer with RDP data](#figure-25-message-analyzer-grouping-viewer-with-rdp-data)
+[Figure 25. Message Analyzer trace results with filtering](#figure-25-message-analyzer-trace-results-with-filtering)
 
-[Figure 26. Message Analyzer Grouping viewer analysis](#figure-26-message-analyzer-grouping-viewer-analysis)
+[Figure 26. Message Analyzer Grouping viewer with RDP data](#figure-26-message-analyzer-grouping-viewer-with-rdp-data)
+
+[Figure 27. Message Analyzer Grouping viewer analysis](#figure-27-message-analyzer-grouping-viewer-analysis)
 
 # Introduction
 
@@ -385,7 +387,7 @@ configuration.
 | □ | Configure non-Windows based computers, including the optional **DC**, that is, if it is not using the Windows operating system. | See [Configuring Non-Windows Test Environment Computers](#configuring-non-windows-test-environment-computers).<br/>This section describes limited configuration tasks that you can perform on the **DC** and the **SUT** computers, as this User Guide does not provide detailed instructions for non-Windows configuration. |
 | □ | Configure the **RDP Client Test Suite** settings. | See [Configuring the Test Suite](#configuring-the-test-suite). <br/>In this section, you will validate or change default configuration settings and property values that are set during the **RDP Client Test Suite** installation. <br/>This can include unique test environment and **Test Suite** settings and others, to accommodate your Test Environment or to customize your Test Case runs. |
 | □ | Configure **RDP Client Test Suite** mode settings | See [Test Run Pre-Configuration](#test-run-pre-configuration). <br/>In this section, you will configure common Test Suite mode settings along with mode settings for specific protocols such as RDPEI and RDPEDISP. |
-| □ | Run Verification tests as a pre-execution check of **RDP Client Test Suite** readiness.  | See [Running Verification Tests](#running-verification-tests). <br/>In this section, you will run command-based build verification tests (BVT), also known as [scenario S1 tests](#scenario-s1-tests), to verify that the **RDP Client Test Suite** is properly configured and ready to run Test Cases. |
+| □ | Run Verification tests as a pre-execution check of **RDP Client Test Suite** readiness.  | See [Running Verification Tests](#running-verification-tests). <br/>In this section, you will run command-based build verification tests (BVT), also known as [scenario S1 tests](https://github.com/microsoft/WindowsProtocolTestSuites/blob/main/TestSuites/RDP/Client/docs/RDP_Overview_ClientTestDesignSpecification.md), to verify that the **RDP Client Test Suite** is properly configured and ready to run Test Cases. |
 | □ | Choose how you will run the preconfigured Test Cases of the **RDP Client Test Suite**. | See [Choosing the RDP Test Case Execution Method](#choosing-the-rdp-test-case-execution-method). |
 | | | |
 
@@ -696,7 +698,7 @@ page](https://github.com/microsoft/WindowsProtocolTestSuites/releases).
 
 **To learn more** about creating Test Suites, see *Creating a Test Suite
 Manually* in the [Getting Started Guide for
-PTF](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md#CreatingaTestSuiteManually).
+PTF](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md#-creating-a-protocol-test-suite-manually).
 The **Protocol Test Framework (PTF)** provides the framework for the
 Test environment. You might want to learn more about the framework if
 you intend to build your own Test Suite.
@@ -705,7 +707,7 @@ you intend to build your own Test Suite.
 
 **Protocol Test Manager** **(PTM)** --- provides a graphical user
 interface (UI) to facilitate configuration and execution of **RDP Client
-Test Suite** [Test Cases](#TestCase_trm). Its use is ***highly*
+Test Suite** Test Cases. Its use is ***highly*
 *recommended***, as it automates many of the otherwise manual
 configuration steps. The PTM installer (**ProtocolTestManager.msi**) is
 located
@@ -725,7 +727,7 @@ the **NetworkCapture** **Properties** on the **PTF** tab of the
 configuration. This feature is referred to as Automatic Network
 Capturing, which is further described in the [Getting Started Guide for
 the Protocol Test
-Framework](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md#4.9).
+Framework](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md#getting-started-guide-for-the-protocol-test-framework).
 
 In addition, you can use Message Analyzer to capture messages that are
 generated by the **Protocol-Test-Suite** message provider that you
@@ -1950,7 +1952,7 @@ Test Cases. The table that follows identifies the test mode and the related dire
 | Protocol Test Manager <br/> and PTMCli.exe | C:\RDP-TestSuite-ClientEP\HtmlTestResults <br/> C:\RDP-TestSuite-ClientEP\HtmlTestResults\DebugLog\ |
 |                                            |                                              |
 
-For further information about test log settings, see the [PTF User Guide](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md#-automatic-network-capturing) in the PTF installation directory.
+For further information about test log settings, see the [PTF User Guide](https://github.com/Microsoft/ProtocolTestFramework/blob/main/docs/PTFUserGuide.md).
 
 ## Running and Debugging Test Cases with Visual Studio
 
@@ -2086,6 +2088,11 @@ the following steps:
 
          #### **Figure 7. Protocol Test Manager: Launching the Configuration Wizard for RDP Client Test Suite**
 
+         You need to select a protocol test suite as following.
+
+      ![](./image/RDP_ClientUserGuide/media/image11-2.png)
+         #### **Figure 8. Protocol Test Manager: Selecting RDP Client Test Suite Folder Path**
+
   2.  Click the **Configuration Wizard** link to begin the **Test Suite** configuration process.
 
       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
@@ -2101,7 +2108,7 @@ the following steps:
 
        ![](./image/RDP_ClientUserGuide/media/image18.png)
 
-         #### **Figure 8. Protocol Test Manager: Reviewing the RDP Test Suite family of protocols**
+         #### **Figure 9. Protocol Test Manager: Reviewing the RDP Test Suite family of protocols**
 
   3.  Read the information presented on the **Test Suite Introduction** page of the PTM Wizard and click the **Deployment Guide** link to
       review general information about the test environment in which you will run your Test Cases.
@@ -2125,17 +2132,17 @@ the following steps:
 
       *More Information*
   
-      **To learn more** about the **Do Manual Configuration** feature, see [Manually Configuring Test Cases and Properties](#manually-configuring-test-cases-and-properties).
+      **To learn more** about the **Do Manual Configuration** feature, see [Manually Configuring Test Cases and Properties](#manual-configuration-of-test-cases-and-properties).
 
       ![](./image/RDP_ClientUserGuide/media/image19.png)
 
-      #### **Figure 9. Protocol Test Manager: Choosing the configuration method**
+      #### **Figure 10. Protocol Test Manager: Choosing the configuration method**
 
       After you click **Run Auto-Detection**, the **Auto-Detection** page of the PTM Wizard displays, as shown in the figure that follows.
 
       ![](./image/RDP_ClientUserGuide/media/image20.png)
 
-      #### **Figure 10. Protocol Test Manager: Verifying SUT connection parameters**
+      #### **Figure 11. Protocol Test Manager: Verifying SUT connection parameters**
 
 6.  On the **Auto-Detection** page of the PTM Wizard, verify that the values for such items as **SUT Name**, **SUT User Name**, **SUT
     Password**, and **Agent Listen Port** are correct in your environment, to ensure that the PTM can connect with the **SUT
@@ -2148,7 +2155,7 @@ the following steps:
 
     ![](./image/RDP_ClientUserGuide/media/image21.png)
 
-      #### **Figure 11. Protocol Test Manager: Reviewing the Detection Results**
+      #### **Figure 12. Protocol Test Manager: Reviewing the Detection Results**
 
 9.  In the **Detection Result** page of the Wizard, review the data that appears under the **Protocols Support Info** 
     and **Feature Support Info** nodes to ensure that the supported protocols and features are as you expect.
@@ -2183,7 +2190,7 @@ the following steps:
 
     ![](./image/RDP_ClientUserGuide/media/image22.png)
 
-      #### **Figure 12. Protocol Test Manager: Selecting (filtering) Test Cases**
+      #### **Figure 13. Protocol Test Manager: Selecting (filtering) Test Cases**
 
 11. Create a hypothetical Test Case configuration in the steps that follow:
 
@@ -2202,7 +2209,7 @@ the following steps:
 
       ![](./image/RDP_ClientUserGuide/media/image23.png)
 
-      #### **Figure 13. Protocol Test Manager: Reviewing/configuring Test Case properties**
+      #### **Figure 14. Protocol Test Manager: Reviewing/configuring Test Case properties**
 
 12. On the **Configure Test Cases** page, click the **Default Group** to
     display the RDP properties that you verified (or revised) in
@@ -2236,7 +2243,7 @@ the following steps:
 
     ![](./image/RDP_ClientUserGuide/media/image24.png)
 
-      #### **Figure 14. Protocol Test Manager: Configuring the Adapters**
+      #### **Figure 15. Protocol Test Manager: Configuring the Adapters**
 
 15. In the **Configure Adapters** page of the PTM Wizard, observe the following Adapters and the indicated topics to which the adapter settings correspond:
 
@@ -2268,7 +2275,7 @@ the following steps:
 
     ![](./image/RDP_ClientUserGuide/media/image25.png)
 
-    #### **Figure 15. Protocol Test Manager: Running the selected Test Cases**
+    #### **Figure 16. Protocol Test Manager: Running the selected Test Cases**
 
 18. Observe that the following options in the lower sector of the UI are available for running Test Cases from the **Run Selected Test Cases** tab of the PTM:
 
@@ -2351,7 +2358,7 @@ To run your Test Cases, perform the steps of the procedure that follows.
 
       ![](./image/RDP_ClientUserGuide/media/image26.png)
 
-      #### **Figure 16. Protocol Test Manager: Removing Test Cases from execution**
+      #### **Figure 17. Protocol Test Manager: Removing Test Cases from execution**
 
       ![](./image/RDP_ClientUserGuide/media/image4.png)Tip
 
@@ -2372,7 +2379,7 @@ To run your Test Cases, perform the steps of the procedure that follows.
 
       ![](./image/RDP_ClientUserGuide/media/image27.png)
 
-      #### **Figure 17. Protocol Test Manager: Context menu commands for Test Case execution**
+      #### **Figure 18. Protocol Test Manager: Context menu commands for Test Case execution**
 
 3.  To display the context menu shown in the figure immediately above,
     click the down-arrow to the left of the **Not Run** check box in the
@@ -2445,7 +2452,7 @@ earlier in the Auto detect portion of [Running the Protocol Test Manager](#insta
 
 ![](./image/RDP_ClientUserGuide/media/image32.png)
 
-#### **Figure 18. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result**
+#### **Figure 19. Protocol Test Manager: RDP Category grouping \| Expanded ErrorMessage result**
 
 
 #### **StandardOut Category Status Indicators**
@@ -2503,7 +2510,7 @@ displayed. In the case of the selected
 
 ![](./image/RDP_ClientUserGuide/media/image33.png)
 
-#### **Figure 19. Protocol Test Manager: RDP BVT test category \| StandardOut node**
+#### **Figure 20. Protocol Test Manager: RDP BVT test category \| StandardOut node**
 
 ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
@@ -2533,7 +2540,7 @@ analysis perspectives of the data, as follows:
 
 ![](./image/RDP_ClientUserGuide/media/image34.png)
 
-#### **Figure 20. Protocol Test Manager: Case List HTML test results display**
+#### **Figure 21. Protocol Test Manager: Case List HTML test results display**
 
 ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
@@ -2631,7 +2638,7 @@ option in PTM.
 After you complete test execution based on a particular Test Case
 configuration in [Running the Test Cases](#running-the-test-cases), you
 have the option to use the PTM to save the configuration as a
-[**Profile**](#Profile) that you can re-run on demand simply by locating
+**Profile** that you can re-run on demand simply by locating
 the **Profile** in a specified directory and loading it directly into
 the PTM or by executing it from the command line. Thereafter, you can
 analyze the data in HTML or text log format.
@@ -2686,7 +2693,7 @@ You can save a **Profile** by performing the steps that follow.
     properties.
 
     ![](./image/RDP_ClientUserGuide/media/image35.png)
-    #### **Figure 21. Protocol Test Manager: Saving a test case Profile**
+    #### **Figure 22. Protocol Test Manager: Saving a test case Profile**
 
     This action should open a **Save** dialog. By default, the **Profile**
     is saved in the user **Documents** folder, but you can change the
@@ -2868,7 +2875,7 @@ the steps that follow:
 
       ![](./image/RDP_ClientUserGuide/media/image36.png)
 
-      #### **Figure 22. Message Analyzer Select Items to Import dialog**
+      #### **Figure 23. Message Analyzer Select Items to Import dialog**
 
   10. Click **OK** in the **Select Items to Import** dialog.
 
@@ -2914,7 +2921,7 @@ Rules** for identification of certain RDP messages.
 
       ![](./image/RDP_ClientUserGuide/media/image37.png)
 
-      #### **Figure 23. Message Analyzer session message providers**
+      #### **Figure 24. Message Analyzer session message providers**
 
   6.  Start Test Case execution from the Protocol Test Manager (PTM) or by
       executing a specific protocol .ps1 file on which you want to focus.
@@ -2941,7 +2948,7 @@ Rules** for identification of certain RDP messages.
 
       ![](./image/RDP_ClientUserGuide/media/image38.png)
 
-      #### **Figure 24. Message Analyzer trace results with filtering**
+      #### **Figure 25. Message Analyzer trace results with filtering**
 
       ![](./image/RDP_ClientUserGuide/media/image4.png)Note
 
@@ -2975,7 +2982,7 @@ Rules** for identification of certain RDP messages.
 
       ![](./image/RDP_ClientUserGuide/media/image39.png)
 
-      #### **Figure 25. Message Analyzer Grouping viewer with RDP data**
+      #### **Figure 26. Message Analyzer Grouping viewer with RDP data**
 
       In the figure, note the Grouping viewer to the left of the **Analysis
       Grid**. The groups are organized such that you see the **CaseName**
@@ -3002,7 +3009,7 @@ Rules** for identification of certain RDP messages.
       
       ![](./image/RDP_ClientUserGuide/media/image40.png)
 
-      #### **Figure 26. Message Analyzer Grouping viewer analysis**
+      #### **Figure 27. Message Analyzer Grouping viewer analysis**
 
       *More Information*
 
