@@ -1335,7 +1335,7 @@ This User Guide provides only the following limited information on configuring t
 
   1.  For domain environments, join all computers to the domain of the **DC computer**.
 
-  2.  Disable active firewalls on all computers as described in [Verify Test Environment Connectivity] (#verify-test-environment-connectivity) from the Driver Computer.
+  2.  Disable active firewalls on all computers as described in [Verify Test Environment Connectivity](#verify-test-environment-connectivity) from the Driver Computer.
 
   3.  To configure the **SUT computer**, perform the following steps:
 
