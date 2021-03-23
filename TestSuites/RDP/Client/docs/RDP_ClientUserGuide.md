@@ -801,7 +801,7 @@ following ways:
 The following figure illustrates the basic **Workgroup Environment**
 architecture:
 
-![](image\RDP_ClientUserGuide\media\image5.png)
+![](./image/RDP_ClientUserGuide/media/image5.png)
 
 #### **Figure 1. Workgroup Environment architecture**
 
