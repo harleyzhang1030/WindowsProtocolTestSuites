@@ -1849,7 +1849,7 @@ created on your **Driver computer** desktop during the **Test Suite** installati
 
 To run a specific test case from the **Driver** computer, execute the following command strings from an elevated command prompt:
 
-    From the PowerShell command, run C:\RDP-TestSuite-ClientEP\Batch\RunTestCasesByFilter.ps1 -Filter "Name=<TestCaseName>" to run specific test case.
+From the PowerShell command, run C:\RDP-TestSuite-ClientEP\Batch\RunTestCasesByFilter.ps1 -Filter "Name=<TestCaseName>" to run specific test case.
 
 Note that Test Case names can be found in the [RDP Overview Client Test Design Specification](https://github.com/microsoft/WindowsProtocolTestSuites/blob/main/TestSuites/RDP/Client/docs/RDP_Overview_ClientTestDesignSpecification.md)
 document on GitHub.
