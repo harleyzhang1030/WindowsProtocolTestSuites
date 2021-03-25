@@ -1110,7 +1110,7 @@ In this section, you will perform a procedure for preliminary configuration of t
   9.  To configure the SUT computer, type the following at the command
     prompt, then press the **Enter** key on your keyboard:
 
-            .\\Config-TerminalClient.ps1
+            .\Config-TerminalClient.ps1
 
   10.  Configure Group Policy to create an AVC 444-supported environment:
 
@@ -1165,7 +1165,7 @@ In this section, you will perform a procedure for preliminary configuration of t
         
         ![](./image/RDP_ClientUserGuide/media/image3.png)Important
 
-        The steps that follow are required for the MS-RDPEUSB Test Cases only. If you are not planning to run these Test Cases, skip step 10.
+        The steps that follow are required for the MS-RDPEUSB Test Cases only. If you are not planning to run these Test Cases, skip steps 11, 12.
 
   11. Navigate to the directory below:
 
@@ -1369,9 +1369,6 @@ settings of the **Test Suite**:
   -   **Unique Test Environment settings** --- including computer names and IP addresses.
 
   -   **Unique Test Suite settings** --- including the RDP protocol version and target operating system version.
-
-  -   **Output directory specification** --- specify the folder used to receive the output from your Test Case runs. You can modify the default location: "C:\\RDPClient_CaptureFileDirectory", 
-      by changing the **CaptureFileProperty** value in the RDP_ClientTestSuite.deployment.ptfconfig file.
 
   -   **Timers** --- set time limits on discrete test tasks and on test run duration using the **WaitTime** property.
 
@@ -1890,9 +1887,6 @@ perform the procedure below and follow the interactive instructions.
         -   After the RDP connection successfully starts, then in the **RDPConnectWithNegotiationApproach** dialog on the **Driver** computer, specify a non-negative number (such as 0) as the **Return
             Value** in the **Action Results** field, and then click the **Succeed** button. Otherwise, if you cannot start the RDP connection, specify a negative number (such as -1) as the **Return
             Value** in the **Action Results** field, specify the error message in the **Failure Message** field, and then click **Fail**.
-
-            ![](./image/RDP_ClientUserGuide/media/image4.png)Note 
-                   <br/>The Test Case should continue to run if you clicked the **Succeed** button, otherwise the Test Case will fail and end.
 
   3.  After the formerly running **Test Case** finishes, observe that the following dialog displays on the **Driver** computer:
 
